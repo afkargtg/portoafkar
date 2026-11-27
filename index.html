@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmad Dzil Afkar — Portofolio DKV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-secondary-fixed-variant": "#58422f",
+            "on-tertiary": "#650815",
+            "secondary-fixed-dim": "#e1c1a7",
+            "inverse-primary": "#006d43",
+            "tertiary-container": "#e86c6e",
+            "surface-container": "#1f201f",
+            "on-secondary": "#402c1b",
+            "on-background": "#e4e2e0",
+            "error": "#ffb4ab",
+            "on-tertiary-fixed-variant": "#852229",
+            "secondary-fixed": "#fedcc2",
+            "on-primary-fixed": "#002111",
+            "surface-tint": "#59de9b",
+            "on-primary-fixed-variant": "#005232",
+            "on-secondary-fixed": "#291808",
+            "inverse-surface": "#e4e2e0",
+            "background": "#131413",
+            "on-surface-variant": "#bccabe",
+            "outline-variant": "#3d4a41",
+            "tertiary-fixed-dim": "#ffb3b1",
+            "tertiary-fixed": "#ffdad8",
+            "primary-fixed-dim": "#59de9b",
+            "surface-container-lowest": "#0d0e0e",
+            "surface-container-high": "#292a29",
+            "surface-bright": "#393938",
+            "on-tertiary-fixed": "#410008",
+            "surface-container-low": "#1b1c1b",
+            "surface-dim": "#131413",
+            "surface": "#131413",
+            "on-primary-container": "#00331d",
+            "outline": "#869489",
+            "secondary": "#e1c1a7",
+            "on-primary": "#003921",
+            "on-tertiary-container": "#5e0211",
+            "on-error-container": "#ffdad6",
+            "on-secondary-container": "#d2b39a",
+            "surface-variant": "#343534",
+            "inverse-on-surface": "#30312f",
+            "primary": "#59de9b",
+            "on-error": "#690005",
+            "error-container": "#93000a",
+            "primary-container": "#00a86b",
+            "secondary-container": "#5b4531",
+            "tertiary": "#ffb3b1",
+            "primary-fixed": "#78fbb6",
+            "surface-container-highest": "#343534",
+            "on-surface": "#e4e2e0"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "3.5rem",
+            "space-sm": "0.5rem",
+            "margin": "4rem",
+            "space-lg": "2rem",
+            "space-md": "1rem",
+            "margin-tablet": "2.5rem",
+            "margin-mobile": "1.25rem"
+          },
+          fontFamily: {
+            "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "display-hero-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "display-hero": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          fontSize: {
+            "headline-lg-mobile": ["32px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-md": ["15px", { lineHeight: "24px", fontWeight: "400" }],
+            "headline-sm": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-md": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "headline-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "700" }],
+            "body-sm": ["13px", { lineHeight: "20px", fontWeight: "400" }],
+            "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.06em", fontWeight: "700" }],
+            "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "display-hero-mobile": ["42px", { lineHeight: "48px", letterSpacing: "-0.03em", fontWeight: "800" }],
+            "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.08em", fontWeight: "600" }],
+            "display-hero": ["84px", { lineHeight: "92px", letterSpacing: "-0.04em", fontWeight: "800" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.1em", fontWeight: "600" }]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+    }
+    section[id] {
+      scroll-margin-top: 90px;
+    }
+  </style>
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- HEADER NAVIGATION -->
+  <header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)]">
+    <div class="h-20 w-full px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between">
+      <a href="#about" class="flex items-center gap-space-md group">
+        <span aria-hidden="true" class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-[13px] font-extrabold tracking-tight transition-transform group-hover:scale-105">ADA</span>
+        <span class="font-label-lg text-label-lg tracking-wider uppercase text-on-surface whitespace-nowrap">Ahmad Dzil Afkar</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-space-lg">
+        <a class="nav-link font-label-md text-label-md uppercase tracking-wider text-secondary border-b border-secondary transition-colors py-space-xs" href="#selected-works">Works</a>
+        <a class="nav-link font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" href="#about">About</a>
+        <a class="nav-link font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" href="#skills">Skills</a>
+        <a class="nav-link font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" href="#contact">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-space-md">
+        <a class="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-md text-label-md px-space-md py-space-sm rounded-full transition-all duration-200 hover:bg-secondary-fixed hover:text-on-secondary-fixed shadow-[0_0_20px_rgba(0,168,107,0.25)] cursor-pointer" href="#contact">Contact Me →</a>
+        <a href="#about" title="Ahmad Dzil Afkar">
+          <img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-secondary/30 hover:ring-primary transition-all" src="foto-profil.jpeg">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-20 bg-surface">
+    <div class="flex flex-col w-full">
+
+      <!-- SECTION 1: HERO PROFILE & BIO -->
+      <section id="about" class="relative w-full overflow-hidden px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-xl pb-space-lg">
+        <!-- Faint Oversized Outline Watermark: BIO -->
+        <div class="pointer-events-none select-none absolute -left-6 top-8 z-0 hidden lg:block opacity-[0.04]">
+          <span class="font-display-hero text-[180px] leading-none font-extrabold uppercase tracking-widest text-transparent [text-stroke:2px_#F3D2B8] [-webkit-text-stroke:2px_#F3D2B8]">
+            BIO
+          </span>
+        </div>
+
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-y-space-xl lg:gap-x-gutter items-center">
+          <!-- Left Column: Typographic Narrative -->
+          <div class="lg:col-span-7 flex flex-col items-start pr-0 lg:pr-space-md">
+            <!-- Pill Label -->
+            <div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+              <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">
+                PORTFOLIO • DKV
+              </span>
+            </div>
+
+            <!-- Creator Name & Hand-Drawn Wavy Underline -->
+            <div class="mt-space-md relative inline-block">
+              <h1 class="font-headline-lg text-headline-lg md:text-[68px] md:leading-[1.05] font-extrabold text-on-surface tracking-tight">
+                Ahmad Dzil Afkar
+              </h1>
+              <div class="w-full mt-2 -mb-1">
+                <svg class="w-full h-4 text-primary-container max-w-[480px]" fill="none" preserveAspectRatio="none" viewBox="0 0 480 18">
+                  <path d="M2.5 12.5C48 5 95 15.5 142 8C190 0.5 238 16 286 9C334 2 382 15 428 7.5C445 4.5 464 6 477.5 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5"></path>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Subtitle -->
+            <h2 class="font-headline-sm text-headline-sm font-semibold text-secondary-fixed mt-space-sm tracking-tight">
+              Visual Communication Designer &amp; Illustrator
+            </h2>
+
+            <!-- Social Media Badges -->
+            <div class="flex items-center gap-space-sm mt-space-md">
+              <!-- Instagram -->
+              <a aria-label="Instagram profile" class="group flex items-center justify-center w-11 h-11 rounded-xl bg-surface-container-high text-primary hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 shadow-md hover:shadow-[0_0_20px_rgba(0,168,107,0.35)]" href="https://instagram.com/dzilafkarr" target="_blank" rel="noopener noreferrer">
+                <svg class="w-5 h-5 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                  <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </a>
+
+              <!-- Works Jump -->
+              <a aria-label="DKV Portfolio Works" class="group flex items-center justify-center w-11 h-11 rounded-xl bg-surface-container-high text-primary hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 shadow-md hover:shadow-[0_0_20px_rgba(0,168,107,0.35)]" href="#selected-works">
+                <svg class="w-5 h-5 transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-4.726 3-3.158 0-5.5-2.261-5.5-5.5 0-3.365 2.46-5.5 5.5-5.5 3.515 0 5.176 2.502 4.908 5.75h-7.784c.061 1.77 1.341 2.822 2.876 2.822 1.303 0 2.219-.684 2.585-1.572h2.141zm-4.839-4.75c-.092-1.258-.871-2.001-2.222-2.001-1.309 0-2.18.777-2.31 2.001h4.532zm-12.887-3.25h-6v-7h5.81c2.193 0 3.69 1.11 3.69 2.923 0 1.232-.716 2.18-1.848 2.614 1.365.372 2.348 1.488 2.348 3.033 0 2.182-1.742 3.43-3.924 3.43h-6.076v-7zm1.905-2.001c1.077 0 1.79-.536 1.79-1.411 0-.895-.713-1.39-1.79-1.39h-2.105v2.801h2.105zm.186 5.8c1.238 0 2.036-.597 2.036-1.636 0-1.018-.798-1.564-2.036-1.564h-2.291v3.2h2.291z"></path>
+                </svg>
+              </a>
+
+              <!-- WhatsApp -->
+              <a aria-label="WhatsApp direct contact" class="group flex items-center justify-center w-11 h-11 rounded-xl bg-surface-container-high text-primary hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 shadow-md hover:shadow-[0_0_20px_rgba(0,168,107,0.35)]" href="https://wa.me/6289699934705" target="_blank" rel="noopener noreferrer">
+                <svg class="w-5 h-5 transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 2c-5.511 0-9.989 4.478-9.989 9.99 0 1.763.459 3.486 1.332 5.007l-1.416 5.176 5.308-1.392c1.474.804 3.136 1.229 4.765 1.229 5.511 0 9.989-4.478 9.989-9.99 0-5.512-4.478-10-9.989-10zm5.823 14.125c-.244.686-1.221 1.319-1.848 1.395-.494.06-1.127.091-3.284-.798-2.613-1.077-4.298-3.738-4.428-3.911-.129-.172-1.054-1.401-1.054-2.671 0-1.27.666-1.895.903-2.153.237-.258.517-.323.689-.323.173 0 .345.002.496.01.161.008.376-.06.588.448.216.517.734 1.79.799 1.92.065.129.108.28.022.452-.086.172-.129.28-.258.431-.129.151-.271.337-.387.452-.129.129-.264.27-.114.528.151.258.671 1.107 1.439 1.791.989.881 1.821 1.155 2.079 1.284.258.129.409.108.56-.065.151-.172.646-.753.818-1.012.172-.258.345-.215.581-.129.237.086 1.507.71 1.765.839.258.129.431.194.495.301.065.108.065.625-.179 1.311z"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Editorial Bio -->
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mt-space-lg">
+              Ahmad is a Visual Communication Design (DKV) student passionate about graphic design, branding, illustration, and 3D visual storytelling. Based in Surabaya, crafting bold and functional visual identities.
+            </p>
+
+            <!-- Stats / Metadata Micro-Row -->
+            <div class="flex flex-wrap items-center gap-y-2 gap-x-space-md mt-space-lg pt-space-md text-on-surface-variant font-label-sm text-label-sm">
+              <div class="flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+                <span>Based in Surabaya, ID</span>
+              </div>
+              <span class="text-surface-variant">•</span>
+              <div class="flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+                <span class="text-secondary-fixed font-medium">Available for Freelance &amp; Art Direction</span>
+              </div>
+              <span class="text-surface-variant">•</span>
+              <div class="flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[16px] text-primary">school</span>
+                <span>DKV Portfolio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Layered Offset Portrait Composition -->
+          <div class="lg:col-span-5 relative flex items-center justify-center lg:justify-end">
+            <div class="relative w-full max-w-[420px] aspect-square">
+              <!-- Decorative Organic Looping SVG Behind Portrait -->
+              <svg class="pointer-events-none absolute -top-10 -right-10 w-[120%] h-[120%] z-0 text-secondary-fixed/20" fill="none" viewBox="0 0 500 500">
+                <path d="M70,120 C180,-20 380,40 430,160 C480,280 410,430 290,460 C170,490 30,420 50,300 C65,210 140,230 220,200 C300,170 330,90 280,60" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+              </svg>
+
+              <!-- Back Offset Card Plate -->
+              <div class="absolute inset-0 translate-x-4 translate-y-4 rounded-full bg-surface-container-high shadow-xl"></div>
+
+              <!-- Main Portrait Foreground Card -->
+              <div class="relative z-10 w-full h-full rounded-full overflow-hidden bg-secondary-fixed shadow-2xl transition-transform duration-500 hover:-translate-y-1">
+                <img alt="Ahmad Dzil Afkar - Visual Communication Designer" class="w-full h-full object-cover object-top" src="foto-profil.jpeg">
+              </div>
+
+              <!-- Floating Badge -->
+              <div class="absolute -bottom-3 right-4 z-20 flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest shadow-xl">
+                <span class="w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_8px_rgba(0,168,107,0.7)]"></span>
+                <span class="font-label-md text-label-md tracking-wider uppercase text-on-surface font-bold">
+                  DKV Artist &amp; Designer
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: FULL-WIDTH EMERALD BANNER BAR -->
+      <section id="skills" class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin py-space-md">
+        <div class="w-full bg-primary-container text-on-primary-container rounded-full px-space-lg md:px-space-xl py-space-md md:py-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md shadow-xl shadow-primary-container/10">
+          <div class="flex flex-col gap-0.5">
+            <h3 class="font-headline-sm text-headline-sm md:text-headline-md font-extrabold tracking-tight text-on-primary-container">
+              Selected DKV Works &amp; Projects
+            </h3>
+            <p class="font-body-md text-body-md text-on-primary-container/85">
+              Explore nirmana, graphic design, and branding mockup explorations.
+            </p>
+          </div>
+          <a class="inline-flex items-center gap-space-xs bg-surface text-on-surface hover:bg-surface-container-lowest font-label-md text-label-md uppercase tracking-wider px-space-lg py-space-sm rounded-full transition-all duration-200 shadow-md whitespace-nowrap" href="#selected-works">
+            <span>View Portfolio</span>
+            <span class="material-symbols-outlined text-[18px]">south</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- SECTION 3: SELECTED DKV WORKS SHOWCASE -->
+      <section id="selected-works" class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl flex flex-col">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg">
+          <div>
+            <div class="inline-flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest mb-1">
+              <span>Curated Index</span><span>—</span><span>01 / 03</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+              Selected Works
+            </h2>
+            <div class="h-1 w-20 bg-primary-container mt-2 rounded-full"></div>
+          </div>
+        </div>
+
+        <!-- 3-Column Responsive Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mt-space-md">
+          <!-- Card 1: Nirmana -->
+          <article onclick="openProjectModal('Nirmana', 'FUNDAMENTAL DESIGN • 2D & 3D', 'Eksplorasi komposisi unsur rupa dasar meliputi titik, garis, bidang, warna, tekstur, serta irama visual dalam karya nirmana dwimatra dan trimatra.', 'karya-nirmana.jpeg')" class="cursor-pointer group relative flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5">
+            <div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-high">
+              <img alt="Nirmana" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="karya-nirmana.jpeg">
+              <div class="absolute top-3 right-3 z-10 px-space-sm py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md">
+                <span class="font-label-sm text-label-sm tracking-wider text-primary font-semibold uppercase">NIRMANA</span>
+              </div>
+            </div>
+            <div class="p-space-lg flex flex-col flex-grow justify-between">
+              <div>
+                <span class="font-label-sm text-label-sm text-secondary-fixed/80 uppercase tracking-widest">FUNDAMENTAL DESIGN • 2D &amp; 3D</span>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 group-hover:text-primary transition-colors">Nirmana</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Eksplorasi komposisi unsur rupa dasar meliputi titik, garis, bidang, warna, tekstur, serta irama visual dalam karya nirmana dwimatra dan trimatra.</p>
+              </div>
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <span class="font-label-md text-label-md text-primary font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">View Project <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+                <span class="font-label-sm text-label-sm text-outline">01</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Graphic Design -->
+          <article onclick="openProjectModal('Graphic Design', 'VISUAL COMMUNICATION • PRINT & DIGITAL', 'Perancangan media komunikasi visual seperti poster, tipografi, layout editorial, dan konten grafis dengan hierarki informasi yang kuat.', 'karya-graphic-design.jpeg')" class="cursor-pointer group relative flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5">
+            <div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-high">
+              <img alt="Graphic Design" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="karya-graphic-design.jpeg">
+              <div class="absolute top-3 right-3 z-10 px-space-sm py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md">
+                <span class="font-label-sm text-label-sm tracking-wider text-primary font-semibold uppercase">GRAPHIC DESIGN</span>
+              </div>
+            </div>
+            <div class="p-space-lg flex flex-col flex-grow justify-between">
+              <div>
+                <span class="font-label-sm text-label-sm text-secondary-fixed/80 uppercase tracking-widest">VISUAL COMMUNICATION • PRINT &amp; DIGITAL</span>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 group-hover:text-primary transition-colors">Graphic Design</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Perancangan media komunikasi visual seperti poster, tipografi, layout editorial, dan konten grafis dengan hierarki informasi yang kuat.</p>
+              </div>
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <span class="font-label-md text-label-md text-primary font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">View Project <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+                <span class="font-label-sm text-label-sm text-outline">02</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Mockup -->
+          <article onclick="openProjectModal('Mockup', 'BRANDING & PACKAGING PRESENTATION', 'Visualisasi penerapan identitas visual pada media nyata seperti kemasan produk, stationery, merchandise, dan media promosi.', 'karya-mockup.jpeg')" class="cursor-pointer group relative flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5">
+            <div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-high">
+              <img alt="Mockup" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="karya-mockup.jpeg">
+              <div class="absolute top-3 right-3 z-10 px-space-sm py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md">
+                <span class="font-label-sm text-label-sm tracking-wider text-primary font-semibold uppercase">MOCKUP</span>
+              </div>
+            </div>
+            <div class="p-space-lg flex flex-col flex-grow justify-between">
+              <div>
+                <span class="font-label-sm text-label-sm text-secondary-fixed/80 uppercase tracking-widest">BRANDING &amp; PACKAGING PRESENTATION</span>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 group-hover:text-primary transition-colors">Mockup</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Visualisasi penerapan identitas visual pada media nyata seperti kemasan produk, stationery, merchandise, dan media promosi.</p>
+              </div>
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <span class="font-label-md text-label-md text-primary font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">View Project <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+                <span class="font-label-sm text-label-sm text-outline">03</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 4: COLLABORATION & CONTACT HIGHLIGHT -->
+      <section id="contact" class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl">
+        <div class="relative w-full rounded-2xl bg-surface-container-low p-space-lg md:p-space-xl overflow-hidden shadow-2xl">
+          <!-- Ambient Glow Spot -->
+          <div class="pointer-events-none absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl"></div>
+
+          <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+            <div class="lg:col-span-8 flex flex-col">
+              <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">
+                Initiate Collaboration
+              </span>
+              <h2 class="font-headline-md text-headline-md md:text-headline-lg font-extrabold text-on-surface tracking-tight mt-space-xs">
+                Have a project or creative concept in mind?
+              </h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-space-sm">
+                Whether you need bespoke visual identity systems, graphic design, or branding mockups, let's bring it to fruition.
+              </p>
+            </div>
+
+            <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm justify-center lg:items-end">
+              <a class="w-full inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider font-bold hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all duration-200 shadow-lg shadow-primary-container/20" href="https://wa.me/6289699934705" rel="noopener noreferrer" target="_blank">
+                <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 2c-5.511 0-9.989 4.478-9.989 9.99 0 1.763.459 3.486 1.332 5.007l-1.416 5.176 5.308-1.392c1.474.804 3.136 1.229 4.765 1.229 5.511 0 9.989-4.478 9.989-9.99 0-5.512-4.478-10-9.989-10zm5.823 14.125c-.244.686-1.221 1.319-1.848 1.395-.494.06-1.127.091-3.284-.798-2.613-1.077-4.298-3.738-4.428-3.911-.129-.172-1.054-1.401-1.054-2.671 0-1.27.666-1.895.903-2.153.237-.258.517-.323.689-.323.173 0 .345.002.496.01.161.008.376-.06.588.448.216.517.734 1.79.799 1.92.065.129.108.28.022.452-.086.172-.129.28-.258.431-.129.151-.271.337-.387.452-.129.129-.264.27-.114.528.151.258.671 1.107 1.439 1.791.989.881 1.821 1.155 2.079 1.284.258.129.409.108.56-.065.151-.172.646-.753.818-1.012.172-.258.345-.215.581-.129.237.086 1.507.71 1.765.839.258.129.431.194.495.301.065.108.065.625-.179 1.311z"></path>
+                </svg>
+                <span>WA: +62 896-9993-4705</span>
+              </a>
+
+              <a class="w-full inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md tracking-wider font-semibold border border-primary-container/60 hover:border-primary-container hover:text-primary transition-all duration-200 shadow-md" href="https://instagram.com/dzilafkarr" rel="noopener noreferrer" target="_blank">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                  <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+                <span>IG: @dzilafkarr</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-surface-container-lowest mt-space-xl">
+    <div class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
+      <div class="flex flex-col gap-space-xs">
+        <span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Ahmad Dzil Afkar</span>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">Desain Komunikasi Visual — Visual Communication &amp; Spatial Narrative</p>
+      </div>
+      <div class="flex flex-wrap items-center gap-space-lg">
+        <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="https://instagram.com/dzilafkarr" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="https://wa.me/6289699934705" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#selected-works">Works</a>
+        <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#about">About</a>
+      </div>
+      <div class="text-right">
+        <span class="font-label-sm text-label-sm text-outline">© 2026 Ahmad Dzil Afkar. All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT PREVIEW MODAL -->
+  <div id="projectModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4" onclick="if(event.target === this) closeProjectModal()">
+    <div class="relative w-full max-w-2xl rounded-2xl bg-surface-container-low border border-outline-variant/40 overflow-hidden shadow-2xl">
+      <button onclick="closeProjectModal()" aria-label="Close modal" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-surface-container-lowest/90 text-on-surface hover:bg-primary-container hover:text-on-primary-container flex items-center justify-center transition-colors cursor-pointer">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+      <div class="w-full aspect-[16/10] bg-surface-container-high overflow-hidden">
+        <img id="modalImage" src="" alt="Project Preview" class="w-full h-full object-cover">
+      </div>
+      <div class="p-space-lg">
+        <span id="modalTag" class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest"></span>
+        <h3 id="modalTitle" class="font-headline-md text-headline-md text-on-surface font-bold mt-1"></h3>
+        <p id="modalDesc" class="font-body-md text-body-md text-on-surface-variant mt-space-sm"></p>
+        <div class="mt-space-lg flex flex-wrap gap-space-sm">
+          <a href="https://wa.me/6289699934705" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-space-md py-space-sm rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold hover:bg-secondary-fixed transition-colors">
+            Diskusi Proyek via WA →
+          </a>
+          <button onclick="closeProjectModal()" class="px-space-md py-space-sm rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:text-primary transition-colors cursor-pointer">
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE SCRIPT -->
+  <script>
+    function openProjectModal(title, tag, desc, imgSrc) {
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalTag').textContent = tag;
+      document.getElementById('modalDesc').textContent = desc;
+      document.getElementById('modalImage').src = imgSrc;
+      const modal = document.getElementById('projectModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeProjectModal() {
+      const modal = document.getElementById('projectModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeProjectModal();
+    });
+
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.forEach(l => {
+          l.classList.remove('text-secondary', 'border-b', 'border-secondary');
+          l.classList.add('text-on-surface-variant');
+        });
+        link.classList.remove('text-on-surface-variant');
+        link.classList.add('text-secondary', 'border-b', 'border-secondary');
+      });
+    });
+  </script>
+</body>
+</html>
